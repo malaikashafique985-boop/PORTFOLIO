@@ -1,0 +1,264 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fc;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    color: #a5b4fc;
+    font-size: 28px;
+}
+
+/* NAVIGATION */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a5b4fc;
+}
+
+/* MAIN */
+
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* SECTIONS */
+
+section {
+    background-color: white;
+    margin: 35px 0;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+/* HOME */
+
+#home {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+#home h1 {
+    color: #172554;
+    font-size: 36px;
+}
+
+#home h2 {
+    color: #6366f1;
+    font-size: 21px;
+}
+
+#home img {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background-color: #4338ca;
+    color: white;
+    padding: 12px 25px;
+    margin: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #172554;
+}
+
+/* CARDS */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    background-color: #eef2ff;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    border-left: 4px solid #6366f1;
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+/* LEARNING PLAN */
+
+ol {
+    padding-left: 30px;
+}
+
+ol li {
+    margin: 10px 0;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #172554;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eef2ff;
+}
+
+/* CONTACT FORM */
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 10px 5px;
+}
+
+button {
+    background-color: #4338ca;
+    color: white;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #172554;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: #a5b4fc;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* JAVASCRIPT RESPONSE */
+
+#response {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    #home h1 {
+        font-size: 27px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+}
